@@ -1,20 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
-import Navbar from './Project/Navbar.jsx'
-import Booking from './Project/Home/Booking.jsx'
-import Main2 from './Project/Main2.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import Landingpag from "./Landing_pag/Landingpag.jsx";
+import { BrowserRouter } from "react-router-dom";
 
-createRoot(document.getElementById('root')).render(
-  // <StrictMode>
-  //   <App />
-  // </StrictMode>,
-  <BrowserRouter>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+    <App />
+      
+{/* <App/> */}
 
-<App />
-<Main2 />
 
-  </BrowserRouter>
-)
+    </BrowserRouter>
+  </StrictMode>
+);

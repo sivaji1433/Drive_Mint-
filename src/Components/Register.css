@@ -1,0 +1,64 @@
+/* Full-page background styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Gradient background */
+  padding: 20px;
+}
+
+/* Unique glassmorphism register card */
+.register-card {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Form title */
+.register-card h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.register-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Placeholder text styling */
+.register-card input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Register button */
+.register-card button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5a92;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.register-card button:hover {
+  background: #ff3366;
+}

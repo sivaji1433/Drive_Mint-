@@ -1,0 +1,50 @@
+/* Default Styles for WhatsApp Button */
+.whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #25d366;  /* WhatsApp Green */
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: 250px;  /* Default width for larger screens */
+    text-decoration: none;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e; /* Darker green for hover effect */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .whatsapp-button img {
+    margin-right: 10px;
+    width: 30px;  /* WhatsApp logo size */
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      width: 220px;  /* Button width on tablets */
+      font-size: 1.1rem;  /* Slightly smaller font */
+    }
+  }
+  
+  /* Mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .whatsapp-button {
+      width: 180px;  /* Button width on mobile devices */
+      font-size: 0.9rem;  /* Smaller font on mobile */
+    }
+  
+    .whatsapp-button img {
+      width: 25px;  /* Smaller logo on mobile */
+    }
+  }
+  

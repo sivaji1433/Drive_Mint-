@@ -1,0 +1,145 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.drive {
+  height: 50px; /* Adjust logo size */
+}
+
+/* Title Section */
+.site-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navigation Links */
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+/* ✅ Laptops (1024px and below) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+/* ✅ Tablets & Phones (768px and below) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop links */
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu */
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ✅ Small Phones (400px and below) */
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .menu-toggle {
+    font-size: 20px;
+  }
+}

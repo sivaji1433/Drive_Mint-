@@ -1,0 +1,147 @@
+
+/* Car.css */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  /* Grid layout for laptops */
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Grid layout for tablets */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Single-column layout for mobile screens */
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .border {
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .border:hover {
+    /* transform: scale(1.05); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .bg-blue-500 {
+    background: #3498db;
+    color: white;
+  }
+  
+  .bg-blue-500:hover {
+    background: #2980b9;
+  }
+  
+  .bg-green-500 {
+    background: #20bb61;
+    color: white;
+  }
+  
+  .bg-green-500:hover {
+    background: #219150;
+  }
+  
+  .bg-gray-500 {
+    background: #7f8c8d;
+    color: white;
+  }
+  
+  .bg-gray-500:hover {
+    background: #6c7a7a;
+  }
+  
+  input,
+  select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
+  h1{
+    color: #22cf6a;
+    font-style: italic;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Adjust form and text size for mobile */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .border {
+      padding: 10px;
+    }
+  
+    input,
+    select,
+    button {
+      font-size: 14px;
+    }
+  }
+
+
+  .phonepay{
+    height: 300px;
+    width: 300px;
+    margin-left: 30%;
+  }
+
+  .booking{
+    margin-left: 25%;
+    margin-right: 25%;
+
+  }
+  

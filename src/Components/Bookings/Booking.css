@@ -1,0 +1,119 @@
+.booking {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.booking h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.payment-form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.payment-form h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.payment-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.payment-form input[type="radio"] {
+  margin-right: 8px;
+}
+
+.payment-success,
+.payment-failed {
+  background-color: #f0f8ff;
+  border: 1px solid #cce7ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.payment-success h3,
+.payment-failed h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.payment-success p,
+.payment-failed p {
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.bg-blue-500 {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+button.bg-gray-500 {
+  background-color: #6b7280;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
+}
+
+img.phonepay {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .booking {
+    padding: 15px;
+  }
+
+  .payment-form {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

@@ -1,51 +1,50 @@
-
-import { Contact, Home } from 'lucide-react'
-import './App.css'
-import Navbar from './Project/Navbar'
-import Booking from './Project/Home/Booking'
-import Car from './Project/Home/Car'
-import { Routes,Route } from 'react-router-dom'
-import Login from './Project/Home/Login'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Register from "./Components/Register";
+import Login from "./Components/Login";
+import Navbar from "./Components/Navbar";
+import Car from "./Components/Bookings/Car";
+import Content from "./Components/Bookings/Content";
+import Home from "./Components/Bookings/Home";
+import Booking from "./Components/Bookings/Booking";
+import Landingpag from "./Landing_pag/Landingpag";
 
 function App() {
-  
-
   return (
-    <>
-<Navbar />
-
-{/* <Photo /> */}
 
 
 
 
+    
+
+
+    
+    
+      <Routes>
+        <Route path="/Register" element={<Register />} />
+       <Route path="/login" element={<Login />} />
+       <Route path="" element={<Landingpag/>}/>
+       
+       <Route path="/navbar" element={<Navbar />} />
+
+{/* <Landingpag /> */}
 
 
 
-<Routes>
+{/* __________________________________________________ */}
 
-<Route path='/home' element={<Home />} />
-<Route path='/booking' element={<Booking />} />
-<Route path='/car' element={<Car />} />
-<Route path='/contact' element={<Contact />} />
-<Route path='/login' element={<Login />} />
+   <Route path="/car" element={<Car/>}/>
+   <Route path="/contact" element={<Content/>}/>
+   <Route path="/home" element={<Home />} />
+   <Route path="/booking" element={<Booking />}/>
 
-
-</Routes>
-
-
-{/* <CarBooking /> */}
+      </Routes>
+    
 
 
 
 
-    </>
-  )
+  );
 }
 
-export default App
 
-
-
-
+export default App;
